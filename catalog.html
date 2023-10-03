@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
   </head>
-  <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
   <body>
+  <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
   <header class="page-header">
     <nav class="navigation">
       <a class="logo-link" href="index.html">
@@ -46,19 +46,18 @@
   </header>
 
   <main class="catalog-main">
-  <header class="catalog-header">
-    <h1 class="hotel-sedona">Гостиницы Седоны</h1>
+  <div class="catalog-header">
+    <h2 class="hotel-sedona">Гостиницы Седоны</h2>
     <ul class="breadcrumbs">
       <li class="breadcrumbs-item">
-        <a class="breadcrumbs-link" href="index,html">
+        <a class="breadcrumbs-link"  href="index.html" aria-current="page"></a>
           <span class="visually-hidden">Главная</span>
-        </a>
       </li>
       <li class="breadcrumbs-item">
         <a class="breadcrumbs-link">Гостиницы</a>
       </li>
     </ul>
-  </header>
+  </div>
   <section class="catalog-filter">
     <h2 class="visually-hidden">Фильтр для выбора гостиницы</h2>
     <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -72,12 +71,12 @@
 					</li>
 					<li class="catalog-filter-item">
 						<label class="control">
-					<input class="control-input" type="checkbox" name="filter-facilities" checked>Парковка
+              <input class="control-input" type="checkbox" name="filter-facilities" checked>Парковка
 						</label>
 					</li>
 					<li class="catalog-filter-item">
 						<label class="control">
-						<input class="control-input" type="checkbox" name="filter-facilities">Wi-Fi
+              <input class="control-input" type="checkbox" name="filter-facilities">Wi-Fi
 						</label>
           </li>
         </ul>
@@ -256,8 +255,8 @@
     </section>
 
 
+      <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social-media">
-        <h2 class="visually-hidden">Социальные сети</h2>
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">HTML-academy в ВКонтакте</span>
@@ -280,7 +279,7 @@
     </div>
 		<div>
       <h2 class="visually-hidden">Сайт-партнёр</h2>
-      <a class="academy-link" href="https://htmlacademy.ru/" aria-label="Ссылка на HTML Academy" aria-current="page">
+      <a class="academy-link" href="https://htmlacademy.ru/" aria-label="Ссылка на HTML Academy">
 				<img src="#" alt="Логотип HTML-Academy">
 			</a>
     </div>
