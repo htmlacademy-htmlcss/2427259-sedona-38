@@ -13,7 +13,7 @@
   <body>
     <div class="page-container">
       <header class="page-header">
-        <a class="logo-link" title="Текущая страница">
+        <a class="logo-link" href="#">
           <img class="logo" src="images\logo\brandsedona.svg" width="138" height="64" alt="Логотип сайта">
         </a>
         <nav class="navigation">
@@ -30,18 +30,18 @@
           </ul>
           <ul class="navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-user-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-user-favorites" href="#">
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
           </ul>
           <li class="navigation-item">
-            <button class="navigation-item secondary-color" type="button">Хочу сюда!</button>
+            <button class="button navigation-item-button" type="button">Хочу сюда!</button>
           </li>
         </nav>
       </header>
@@ -88,8 +88,10 @@
 
         <section class="services">
           <h2 class="visually-hidden">Предлагаемые услыги</h2>
+          <div class="services-offer">
           <p class="services-caption">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
           <p class="services-description">Опытный персонал и качественное обслуживание!</p>
+          </div>
           <ul class="services-item">
             <li class="services-item-hotel">
               <div class="services-item">
@@ -118,20 +120,24 @@
           <p class="hotel-search-caption">Заинтересовались?</p>
           <p class="hotel-search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
             гостиниц в Седоне</p>
-          <button class="hotel-search-button secondary-color" type="submit">Поиск гостиницы в Седоне</button>
+          <button class="hotel-search-button button" type="submit">Поиск гостиницы в Седоне</button>
         </section>
       </main>
 
       <footer class="page-footer">
         <section class="subscribe">
+          <div class="subscribe-on">
           <h2 class="visually-hidden">Подписка на рассылку</h2>
           <p class="subscribe-on">Подпишитесь на рассылку</p>
+          </div>
+          <div class="subscribe-description">
           <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          </div>
           <form class="subscribe-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="subscribe-email" class="visually-hidden"></label>
             <input class="subscribe-input" type="email" id="subscribe-email" name="email" required
               placeholder="Ваш e-mail">
-            <button class="button button-newsletter" type="submit">Подписаться</button>
+            <button class="button button-newsletter secondary-color" type="submit">Подписаться</button>
           </form>
         </section>
         <div class="page-footer-container">
