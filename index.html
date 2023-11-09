@@ -15,7 +15,7 @@
       <header class="page-header">
         <nav class="navigation content-wrapper">
           <a class="logo-link" href="#">
-            <img class="brandsedona" src="images\logo\brandsedona.svg" width="138" height="64" alt="Логотип сайта">
+            <img class="brandsedona" src="images\logo\brandsedona.svg" width="138" height="70" alt="Логотип сайта">
           </a>
           <div class="navigation-list-content">
             <ul class="navigation-list">
@@ -30,26 +30,23 @@
               </li>
             </ul>
           </div>
-          <div class="navigation-user-content">
-            <ul class="navigation-user navigation-list">
-              <li class="navigation-user-item">
-                <a class="navigation-user-link navigation-user-search" href="#">
-                  <span class="visually-hidden">Поиск</span>
-                </a>
-              </li>
-              <li class="navigation-user-item">
-                <a class="navigation-user-link navigation-user-favorites" href="#">
-                  <span class="visually-hidden">Избранное</span>
-                </a>
-              </li>
-            </ul>
-            <li class="navigation-user-item-button">
-              <button class="button navigation-item-button" type="button">Хочу сюда!</button>
+          <ul class="navigation-user navigation-list">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link navigation-user-search" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
             </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link navigation-user-favorites" href="#">
+                <span class="visually-hidden">Избранное</span>
+              </a>
+            </li>
+          </ul>
+          <div>
+            <a class="button navigation-item-button header-button" href="#">Хочу сюда!</a>
           </div>
         </nav>
       </header>
-
 
       <main class="main-container main-index">
         <section class="index-hero content-wrapper">
@@ -60,7 +57,7 @@
 
         <section class="sedona-advantages">
           <h2 class="visually-hidden">Преимущества Седоны</h2>
-          <div class="short-description content-wrapper">
+          <div class="short-description">
             <p class="sedona-place-advantages caption">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
             <p class="sedona-cause-advantages caption-description">Рассмотрим причины, по которым Седона круче, чем
               Гранд-Каньон!</p>
@@ -69,33 +66,38 @@
             <li class="advantages-item">
               <div class="advantages-title-item">
                 <div class="advantages-title-description">
-                  <h3 class="advantages-title">Настоящий городок</h3>
-                  <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                  <h3 class="advantages-title advantages-main-title">Настоящий городок</h3>
+                  <p class="advantages-description-main">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
-                <img class="sedona-city" src="images\main\sedona-city.jpg" width="800" alt="Городок Седона.">
+                <img class="sedona-city" src="images\main\sedona-city.jpg" width="800" height="385"
+                  alt="Городок Седона.">
               </div>
-            </li>
-            <li class="advantages-nested">
-              <h3 class="advantages-title advantages-title-nested">Небольшая площадь</h3>
-              <p class="advantages-description">Все достопримечательности находятся очень
-                близко</p>
-            </li>
-            <li class="advantages-nested">
-              <h3 class="advantages-title advantages-title-nested">Красивая дорога</h3>
-              <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не
-                скучно!</p>
-            </li>
-            <li class="advantages-nested">
-              <h3 class="advantages-title advantages-title-nested">Мало туристов</h3>
-              <p class="advantages-description">Большинство едет в Гранд Каньон и толпится
-                там</p>
+
+              <ul class="advantages-list-nested">
+                <li class="advantages-nested">
+                  <h3 class="advantages-title advantages-title-nested">Небольшая площадь</h3>
+                  <p class="advantages-description">Все достопримечательности находятся очень
+                    близко</p>
+                </li>
+                <li class="advantages-nested">
+                  <h3 class="advantages-title advantages-title-nested">Красивая <br> дорога</h3>
+                  <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не
+                    скучно!</p>
+                </li>
+                <li class="advantages-nested">
+                  <h3 class="advantages-title advantages-title-nested">Мало <br> туристов</h3>
+                  <p class="advantages-description">Большинство едет в Гранд Каньон и толпится
+                    там</p>
+                </li>
+              </ul>
             </li>
             <li class="advantages-item">
               <div class="advantages-title-item">
-                <img class="devil-bridge" src="images\main\devil-bridge.jpg" width="800" alt="Мост дьявола.">
+                <img class="devil-bridge" src="images\main\devil-bridge.jpg" width="800" height="385"
+                  alt="Мост дьявола.">
                 <div class="advantages-title-description">
-                  <h3 class="advantages-title">Там есть мост дьявола</h3>
-                  <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                  <h3 class="advantages-title advantages-main-title">Там есть мост дьявола</h3>
+                  <p class="advantages-description-main">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                 </div>
               </div>
 
@@ -111,24 +113,16 @@
           </div>
           <ul class="services-list">
             <li class="services-item">
-              <div class="services-item-hotel">
-                <h3 class="services-title">Жильё</h3>
-                <p class="services-item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-              </div>
+              <h3 class="advantages-title offers-title services-item-hotel">Жильё</h3>
+              <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="services-item">
-              <div class="services-item-food">
-                <h3 class="services-title">Еда</h3>
-                <p class="services-item-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
-                </p>
-              </div>
+              <h3 class="advantages-title offers-title services-item-food">Еда</h3>
+              <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="services-item">
-              <div class="services-item-gift">
-                <h3 class="services-title">Сувениры</h3>
-                <p class="services-item-description">Не только китайского, но и настоящего местного производства!
-                </p>
-              </div>
+              <h3 class="advantages-title offers-title services-item-gift">Сувениры</h3>
+              <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
             </li>
           </ul>
         </section>
@@ -138,7 +132,7 @@
           <p class="hotel-search-description caption-description">Укажите предполагаемые даты поездки, и мы покажем вам
             лучшие предложения
             гостиниц в Седоне</p>
-          <button class="hotel-search-button button" type="submit">Поиск гостиницы в Седоне</button>
+          <a class="hotel-search-button button" href="catalog.html">Поиск гостиницы в Седоне</a>
         </section>
       </main>
 
