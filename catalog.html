@@ -11,55 +11,57 @@
   </head>
 
   <body>
-    <div class="page-container">
+    <div class="page-container content">
       <header class="page-header">
-        <a class="logo-link" title="Текущая страница">
-          <img class="logo" src="images\logo\brandsedona.svg" width="138" height="64" alt="Логотип сайта">
-        </a>
-        <nav class="navigation">
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">О седоне</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
-            </li>
-          </ul>
-          <ul class="navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-user-search" href="#">
+        <nav class="navigation content-wrapper">
+          <a class="logo-link" href="#">
+            <img class="brandsedona" src="images\logo\brandsedona.svg" width="138" height="70" alt="Логотип сайта">
+          </a>
+          <div class="navigation-list-content">
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <a class="navigation-link" href="index.html">Главная</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">О седоне</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="navigation-user navigation-list">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link navigation-user-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-user-favorites" href="#">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link navigation-user-favorites" href="#">
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
           </ul>
-          <li class="navigation-item">
-            <button class="button navigation-item-button" type="button">Хочу сюда!</button>
-          </li>
+          <div>
+            <a class="button navigation-item-button header-button" href="#">Хочу сюда!</a>
+          </div>
         </nav>
       </header>
 
-
-      <main class="catalog-main">
+      <main class="catalog-main main-inner">
         <section class="catalog-filter">
           <div class="catalog-header">
-            <h2 class="hotel-sedona">Гостиницы Седоны</h2>
-            <ul class="breadcrumbs">
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link-main" href="index.html"></a>
+            <h1 class="hotel-sedona">Гостиницы Седоны</h1>
+            <ol class="breadcrumbs">
+              <li class="breadcrumbs-item breadcrumbs-main">
+                <a class="breadcrumbs-link-main" href="index.html" aria-current="page"></a>
                 <span class="visually-hidden">Главная</span>
               </li>
+              <li class="breadcrumbs-item breadcrumbs-more"></li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link-hotel" title="Текущая страница">Гостиницы</a>
               </li>
-            </ul>
+            </ol>
           </div>
           <div class="catalog-points">
             <h2 class="visually-hidden">Фильтр для выбора гостиницы</h2>
@@ -69,19 +71,23 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="filter-facilities" value="facilities"
-                        checked>Бассейн
+                      <input class="control-input" type="checkbox" name="filter-facilities" value="facilities" checked>
+                      <span class="control-option"></span>
+                      Бассейн
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="filter-facilities" value="facilities"
-                        checked>Парковка
+                      <input class="control-input" type="checkbox" name="filter-facilities" value="facilities" checked>
+                      <span class="control-option"></span>
+                      Парковка
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="filter-facilities" value="facilities">Wi-Fi
+                      <input class="control-input" type="checkbox" name="filter-facilities" value="facilities">
+                      <span class="control-option"></span>
+                      Wi-Fi
                     </label>
                   </li>
                 </ul>
@@ -91,30 +97,36 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type-of-housing" value="hotel" checked>Гостиница
+                      <input class="control-input" type="radio" name="type-of-housing" value="hotel" checked>
+                      <span class="control-option-radio"></span>
+                      Гостиница
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type-of-housing" value="motel">Мотель
+                      <input class="control-input" type="radio" name="type-of-housing" value="motel">
+                      <span class="control-option-radio"></span>
+                      Мотель
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type-of-housing" value="apartments">Апартаменты
+                      <input class="control-input" type="radio" name="type-of-housing" value="apartments">
+                      <span class="control-option-radio"></span>
+                      Апартаменты
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <p class="catalog-filter-buttons">
+              <div class="button-filter">
                 <button class="button catalog-filter-accept secondary-color" type="submit">Применить</button>
                 <button class="button catalog-filter-reset" type="reset">Сбросить</button>
-              </p>
+              </div>
             </form>
           </div>
         </section>
 
-        <section class="catalog">
+        <section class="catalog content-wrapper">
           <div class="catalog-search">
             <h2 class="visually-hidden">Подходящие гостиницы</h2>
             <p class="catalog-found">Найдено гостиниц: 38</p>
@@ -241,13 +253,14 @@
       </main>
 
       <footer class="page-footer">
-        <section class="subscribe-on-catalog">
+        <section class="subscribe content-wrapper">
           <div class="subscribe-on">
-          <h2 class="visually-hidden">Подписка на рассылку</h2>
-          <p class="subscribe-on">Подпишитесь на рассылку</p>
+            <h2 class="visually-hidden">Подписка на рассылку</h2>
+            <p class="subscribe-on caption">Подпишитесь на рассылку</p>
           </div>
           <div class="subscribe-description">
-          <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <p class="subscribe-description caption-description">Только полезная информация и никакого спама, честное
+              бойскаутское!</p>
           </div>
           <form class="subscribe-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="subscribe-email" class="visually-hidden"></label>
@@ -256,10 +269,10 @@
             <button class="button button-newsletter secondary-color" type="submit">Подписаться</button>
           </form>
         </section>
-        <div class="page-footer-container">
-          <section>
+        <div class="page-footer-container content-wrapper">
+          <section class="footer-social">
             <h2 class="visually-hidden">Социальные сети</h2>
-            <ul class="social-media">
+            <ul class="social-media-list">
               <li class="social-item">
                 <a class="social-link-vk" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">HTML-academy в ВКонтакте</span>
@@ -277,9 +290,9 @@
               </li>
             </ul>
           </section>
-          <section>
+          <section class="phone-link">
             <h2 class="visually-hidden">Номер телефона</h2>
-            <a class="phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <a class="phone-link-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </section>
           <section>
             <h2 class="visually-hidden">Сайт-партнёр</h2>
@@ -288,9 +301,7 @@
             </a>
           </section>
         </div>
-
       </footer>
-
     </div>
   </body>
 
