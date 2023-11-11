@@ -46,7 +46,7 @@ body {
   appearance: none;
   min-width: 140px;
   padding: 8px 50px;
-
+box-sizing: border-box;
 }
 
 .chosen {
@@ -245,6 +245,7 @@ body {
 .advantages-title-description {
   width: 400px;
   padding: 102px 85px;
+  box-sizing: border-box;
 }
 
 .advantages-title {
@@ -263,7 +264,10 @@ body {
 
 .advantages-description-main {
   color: #ffffff;
-  margin: 0;
+}
+
+.advantages-description-title {
+  margin: 30px 0 0 0;
 }
 
 .sedona-city {
@@ -284,6 +288,7 @@ body {
   padding: 103px 85px;
   margin-top: auto;
   margin-bottom: auto;
+  box-sizing: border-box;
 }
 
 .advantages-nested:nth-child(odd) {
@@ -296,29 +301,28 @@ body {
 
 .advantages-title-nested {
   color: #000000;
-  margin: 0;
+}
+
+.advantages-title-list {
+  margin:0 0 30px 0;
+}
+
+.advantages-title-list::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  display: block;
 }
 
 .advantages-title-nested::after {
-  content: "";
-  width: 60px;
-  height: 2px;
   background-color: rgba(0, 0, 0, 0.30);
-  display: block;
-  margin: 30px auto;
 }
 
 .advantages-main-title:after {
-  content: "";
-  width: 60px;
-  height: 2px;
   background-color: rgba(255, 255, 255, 0.30);
-  display: block;
-  margin: 30px auto;
-
 }
 
-.advantages-description {
+.offers-description {
   margin: 0;
 }
 
@@ -335,6 +339,7 @@ body {
   width: 400px;
   padding: 80px 85px;
   min-height: 230px;
+  box-sizing: border-box;
 }
 
 .services-list li:nth-child(even) {
