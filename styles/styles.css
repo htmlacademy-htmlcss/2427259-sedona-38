@@ -20,7 +20,7 @@ html {
 
 body {
   margin: 0;
-  display: flex;
+  display: grid;
   flex-direction: column;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
@@ -321,7 +321,6 @@ body {
   margin: 0;
   padding-top: 51px;
   padding-bottom: 82px;
-  height: 485px;
 }
 
 .short-description {
@@ -356,6 +355,7 @@ body {
 
 .advantages-list {
   margin: 0;
+  margin-top: 21px;
   padding: 0;
   list-style-type: none;
 }
@@ -414,7 +414,7 @@ body {
 .advantages-nested {
   width: 400px;
   min-height: 179px;
-  padding: 103px 85px;
+  padding: 102px 84px;
   margin-top: auto;
   margin-bottom: auto;
   box-sizing: border-box;
@@ -486,17 +486,17 @@ body {
 
 .services-item-hotel::before {
   content: url("../images/icons/services/hotel.svg");
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 }
 
 .services-item-food::before {
   content: url("../images/icons/services/food.svg");
-  margin: 0 0 30px 0;
+  margin: 0 0 23px 0;
 }
 
 .services-item-gift::before {
   content: url("../images/icons/services/souvenir.svg");
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 
 .offers-title {
@@ -671,6 +671,7 @@ body {
   background-repeat: no-repeat;
 }
 
+
 .social-link-tg {
   content: url("../images/icons/social/tg.svg");
   background-size: 18px 16px;
@@ -828,11 +829,6 @@ body {
 
 }
 
-.catalog-filter-group {
-  border: 0;
-  margin: 0 70px 0 0;
-  padding: 0;
-}
 
 .catalog-filter-list {
   list-style-type: none;
@@ -861,6 +857,7 @@ body {
 .catalog-filter-group {
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
 .catalog-filter-infrastructure {
@@ -1127,6 +1124,10 @@ border-radius: 0 4px 4px 0;
 
 .select-item {
   font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
   color: #333333;
   margin: 0;
   -webkit-appearance: none;
