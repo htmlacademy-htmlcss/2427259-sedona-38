@@ -138,11 +138,6 @@ body {
   flex-direction: column;
 }
 
-.page-header {
-  color: #000000;
-  height: 64px;
-}
-
 .navigation {
   display: flex;
 }
