@@ -321,6 +321,7 @@ body {
   margin: 0;
   padding-top: 51px;
   padding-bottom: 82px;
+  height: 485px;
 }
 
 .short-description {
@@ -380,6 +381,9 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
+  max-width: 230px;
+  margin: 0;
 }
 
 .advantages-main-title {
@@ -446,6 +450,10 @@ body {
 
 .advantages-main-title:after {
   background-color: rgba(255, 255, 255, 0.30);
+}
+
+.advantages-item-box {
+  min-height: 385px;
 }
 
 .offers-description {
